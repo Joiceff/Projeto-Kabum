@@ -59,10 +59,10 @@ kabum_robot_carrinho/
 
 ## ▶️ Como Executar os Testes
 
-### Execução completa:
+### Execução completa pela tag Geral:
 
 ```bash
-robot -d ./logs tests/carrinho_compras.robot
+robot --include geral -d ./logs tests/carrinho_compras.robot
 ```
 
 ### Execução por tag:
@@ -92,4 +92,4 @@ Após a execução, os relatórios ficarão na pasta `logs/`:
 
 ## 🙋‍♀️ Autor(a)
 
-Joice Fernanda / Samuel Brandão *(personalize com seu nome ou GitHub)*
+Joice Fernanda 
