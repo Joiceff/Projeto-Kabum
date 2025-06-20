@@ -1,141 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20250616 20:49:49.214" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20250618 14:51:51.957" rpa="false" schemaversion="4">
 <suite id="s1" name="Carrinho Compras" source="C:\kabum_robot_carrinho\tests\carrinho_compras.robot">
 <kw name="Abrir o navegador e acessar o site" library="carrinho_keywords" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20250616 20:49:49.389" level="INFO">Opening browser 'chrome' to base url 'https://www.kabum.com.br/login?redirect_uri=https://www.kabum.com.br/'.</msg>
-<status status="PASS" starttime="20250616 20:49:49.389" endtime="20250616 20:49:57.715"/>
+<msg timestamp="20250618 14:51:52.223" level="INFO">Opening browser 'chrome' to base url 'https://www.kabum.com.br/login?redirect_uri=https://www.kabum.com.br/'.</msg>
+<status status="PASS" starttime="20250618 14:51:52.222" endtime="20250618 14:52:00.870"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20250616 20:49:57.715" endtime="20250616 20:49:57.767"/>
+<status status="PASS" starttime="20250618 14:52:00.870" endtime="20250618 14:52:05.615"/>
 </kw>
-<status status="PASS" starttime="20250616 20:49:49.389" endtime="20250616 20:49:57.767"/>
+<status status="PASS" starttime="20250618 14:51:52.222" endtime="20250618 14:52:05.615"/>
 </kw>
-<test id="s1-t1" name="Remover uma compra do carrinho" line="13">
+<test id="s1-t1" name="Realizar compra e excluir o item do carrinho" line="20">
 <kw name="Dado que realizo o login com sucesso" library="carrinho_keywords">
 <kw name="Log To Console" library="BuiltIn">
 <arg>Digitando o e-mail</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20250616 20:49:57.769" endtime="20250616 20:49:57.770"/>
+<status status="PASS" starttime="20250618 14:52:05.617" endtime="20250618 14:52:05.617"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="main-content"]/div[2]/div/section/div/form/div[1]/input</arg>
 <arg>samuelbrandao.oliveira@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20250616 20:49:57.771" level="INFO">Typing text 'samuelbrandao.oliveira@gmail.com' into text field '//*[@id="main-content"]/div[2]/div/section/div/form/div[1]/input'.</msg>
-<status status="PASS" starttime="20250616 20:49:57.770" endtime="20250616 20:49:58.034"/>
+<msg timestamp="20250618 14:52:05.619" level="INFO">Typing text 'samuelbrandao.oliveira@gmail.com' into text field '//*[@id="main-content"]/div[2]/div/section/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20250618 14:52:05.617" endtime="20250618 14:52:05.858"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:03.034" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250616 20:49:58.034" endtime="20250616 20:50:03.034"/>
+<msg timestamp="20250618 14:52:10.859" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250618 14:52:05.858" endtime="20250618 14:52:10.859"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Digitando o e-mail</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20250616 20:50:03.034" endtime="20250616 20:50:03.034"/>
+<status status="PASS" starttime="20250618 14:52:10.859" endtime="20250618 14:52:10.859"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="main-content"]/div[2]/div/section/div/form/div[2]/input</arg>
 <arg>G@fisa2030</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20250616 20:50:03.034" level="INFO">Typing text 'G@fisa2030' into text field '//*[@id="main-content"]/div[2]/div/section/div/form/div[2]/input'.</msg>
-<status status="PASS" starttime="20250616 20:50:03.034" endtime="20250616 20:50:03.435"/>
+<msg timestamp="20250618 14:52:10.861" level="INFO">Typing text 'G@fisa2030' into text field '//*[@id="main-content"]/div[2]/div/section/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20250618 14:52:10.859" endtime="20250618 14:52:11.090"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:08.435" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250616 20:50:03.435" endtime="20250616 20:50:08.435"/>
+<msg timestamp="20250618 14:52:16.090" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250618 14:52:11.090" endtime="20250618 14:52:16.090"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Clicando na mensagem de Cookies</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20250616 20:50:08.435" endtime="20250616 20:50:08.435"/>
+<status status="PASS" starttime="20250618 14:52:16.091" endtime="20250618 14:52:16.091"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="onetrust-accept-btn-handler"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20250616 20:50:08.435" level="INFO">Clicking button '//*[@id="onetrust-accept-btn-handler"]'.</msg>
-<status status="PASS" starttime="20250616 20:50:08.435" endtime="20250616 20:50:08.823"/>
+<msg timestamp="20250618 14:52:16.092" level="INFO">Clicking button '//*[@id="onetrust-accept-btn-handler"]'.</msg>
+<status status="PASS" starttime="20250618 14:52:16.091" endtime="20250618 14:52:16.400"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Clicando no botão ENTRAR</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20250616 20:50:08.823" endtime="20250616 20:50:08.823"/>
+<status status="PASS" starttime="20250618 14:52:16.400" endtime="20250618 14:52:16.405"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="main-content"]/div[2]/div/section/div/form/button[1]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20250616 20:50:08.823" level="INFO">Clicking button '//*[@id="main-content"]/div[2]/div/section/div/form/button[1]'.</msg>
-<status status="PASS" starttime="20250616 20:50:08.823" endtime="20250616 20:50:09.264"/>
+<msg timestamp="20250618 14:52:16.405" level="INFO">Clicking button '//*[@id="main-content"]/div[2]/div/section/div/form/button[1]'.</msg>
+<status status="PASS" starttime="20250618 14:52:16.405" endtime="20250618 14:52:16.700"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:14.265" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250616 20:50:09.264" endtime="20250616 20:50:14.265"/>
+<msg timestamp="20250618 14:52:21.701" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250618 14:52:16.700" endtime="20250618 14:52:21.702"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Olá</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20250616 20:50:24.052" level="INFO">Current page contains text 'Olá'.</msg>
-<status status="PASS" starttime="20250616 20:50:14.265" endtime="20250616 20:50:24.052"/>
+<msg timestamp="20250618 14:52:24.269" level="INFO">Current page contains text 'Olá'.</msg>
+<status status="PASS" starttime="20250618 14:52:21.702" endtime="20250618 14:52:24.269"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:29.054" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250616 20:50:24.053" endtime="20250616 20:50:29.054"/>
+<msg timestamp="20250618 14:52:29.271" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250618 14:52:24.269" endtime="20250618 14:52:29.271"/>
 </kw>
-<status status="PASS" starttime="20250616 20:49:57.769" endtime="20250616 20:50:29.054"/>
+<status status="PASS" starttime="20250618 14:52:05.616" endtime="20250618 14:52:29.271"/>
 </kw>
 <kw name="E pesquiso um produto na loja da kabum" library="carrinho_keywords">
 <kw name="Log To Console" library="BuiltIn">
 <arg>Fechando propaganda</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20250616 20:50:29.054" endtime="20250616 20:50:29.057"/>
+<status status="PASS" starttime="20250618 14:52:29.272" endtime="20250618 14:52:29.272"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[@class="ins-web-opt-in-reminder-close-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250616 20:50:29.059" level="INFO">Clicking element '//span[@class="ins-web-opt-in-reminder-close-button"]'.</msg>
-<status status="PASS" starttime="20250616 20:50:29.057" endtime="20250616 20:50:29.385"/>
+<msg timestamp="20250618 14:52:29.273" level="INFO">Clicking element '//span[@class="ins-web-opt-in-reminder-close-button"]'.</msg>
+<status status="PASS" starttime="20250618 14:52:29.272" endtime="20250618 14:52:29.459"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:39.387" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20250616 20:50:29.386" endtime="20250616 20:50:39.387"/>
+<msg timestamp="20250618 14:52:39.459" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20250618 14:52:29.459" endtime="20250618 14:52:39.459"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Pesquisar um produto</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20250616 20:50:39.387" endtime="20250616 20:50:39.387"/>
+<status status="PASS" starttime="20250618 14:52:39.459" endtime="20250618 14:52:39.460"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20250616 20:50:39.387" endtime="20250616 20:50:39.464"/>
+<status status="PASS" starttime="20250618 14:52:39.460" endtime="20250618 14:52:39.689"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${palavra}</var>
 <arg>aspirador</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20250616 20:50:39.464" level="INFO">${palavra} = aspirador</msg>
-<status status="PASS" starttime="20250616 20:50:39.464" endtime="20250616 20:50:39.464"/>
+<msg timestamp="20250618 14:52:39.689" level="INFO">${palavra} = aspirador</msg>
+<status status="PASS" starttime="20250618 14:52:39.689" endtime="20250618 14:52:39.689"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>@{letras}</var>
 <arg>list("${palavra}")</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20250616 20:50:39.464" level="INFO">@{letras} = [ a | s | p | i | r | a | d | o | r ]</msg>
-<status status="PASS" starttime="20250616 20:50:39.464" endtime="20250616 20:50:39.464"/>
+<msg timestamp="20250618 14:52:39.690" level="INFO">@{letras} = [ a | s | p | i | r | a | d | o | r ]</msg>
+<status status="PASS" starttime="20250618 14:52:39.689" endtime="20250618 14:52:39.690"/>
 </kw>
 <for flavor="IN">
 <var>${char}</var>
@@ -146,17 +146,17 @@
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <arg>${char}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20250616 20:50:39.468" level="INFO">Sending key(s) ('a',) to xpath=//input[@id="inputBusca"] element.</msg>
-<msg timestamp="20250616 20:50:39.882" level="INFO">Sending key a</msg>
-<status status="PASS" starttime="20250616 20:50:39.464" endtime="20250616 20:50:39.945"/>
+<msg timestamp="20250618 14:52:39.693" level="INFO">Sending key(s) ('a',) to xpath=//input[@id="inputBusca"] element.</msg>
+<msg timestamp="20250618 14:52:40.050" level="INFO">Sending key a</msg>
+<status status="PASS" starttime="20250618 14:52:39.690" endtime="20250618 14:52:40.069"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:40.147" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20250616 20:50:39.946" endtime="20250616 20:50:40.147"/>
+<msg timestamp="20250618 14:52:40.270" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20250618 14:52:40.069" endtime="20250618 14:52:40.270"/>
 </kw>
-<status status="PASS" starttime="20250616 20:50:39.464" endtime="20250616 20:50:40.147"/>
+<status status="PASS" starttime="20250618 14:52:39.690" endtime="20250618 14:52:40.270"/>
 </iter>
 <iter>
 <var name="${char}">s</var>
@@ -164,17 +164,17 @@
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <arg>${char}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20250616 20:50:40.147" level="INFO">Sending key(s) ('s',) to xpath=//input[@id="inputBusca"] element.</msg>
-<msg timestamp="20250616 20:50:40.527" level="INFO">Sending key s</msg>
-<status status="PASS" starttime="20250616 20:50:40.147" endtime="20250616 20:50:40.600"/>
+<msg timestamp="20250618 14:52:40.273" level="INFO">Sending key(s) ('s',) to xpath=//input[@id="inputBusca"] element.</msg>
+<msg timestamp="20250618 14:52:40.666" level="INFO">Sending key s</msg>
+<status status="PASS" starttime="20250618 14:52:40.271" endtime="20250618 14:52:40.715"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:40.802" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20250616 20:50:40.600" endtime="20250616 20:50:40.802"/>
+<msg timestamp="20250618 14:52:40.915" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20250618 14:52:40.715" endtime="20250618 14:52:40.915"/>
 </kw>
-<status status="PASS" starttime="20250616 20:50:40.147" endtime="20250616 20:50:40.802"/>
+<status status="PASS" starttime="20250618 14:52:40.271" endtime="20250618 14:52:40.915"/>
 </iter>
 <iter>
 <var name="${char}">p</var>
@@ -182,17 +182,17 @@
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <arg>${char}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20250616 20:50:40.802" level="INFO">Sending key(s) ('p',) to xpath=//input[@id="inputBusca"] element.</msg>
-<msg timestamp="20250616 20:50:41.207" level="INFO">Sending key p</msg>
-<status status="PASS" starttime="20250616 20:50:40.802" endtime="20250616 20:50:41.267"/>
+<msg timestamp="20250618 14:52:40.917" level="INFO">Sending key(s) ('p',) to xpath=//input[@id="inputBusca"] element.</msg>
+<msg timestamp="20250618 14:52:41.284" level="INFO">Sending key p</msg>
+<status status="PASS" starttime="20250618 14:52:40.915" endtime="20250618 14:52:41.357"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:41.469" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20250616 20:50:41.268" endtime="20250616 20:50:41.469"/>
+<msg timestamp="20250618 14:52:41.558" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20250618 14:52:41.358" endtime="20250618 14:52:41.558"/>
 </kw>
-<status status="PASS" starttime="20250616 20:50:40.802" endtime="20250616 20:50:41.469"/>
+<status status="PASS" starttime="20250618 14:52:40.915" endtime="20250618 14:52:41.558"/>
 </iter>
 <iter>
 <var name="${char}">i</var>
@@ -200,17 +200,17 @@
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <arg>${char}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20250616 20:50:41.469" level="INFO">Sending key(s) ('i',) to xpath=//input[@id="inputBusca"] element.</msg>
-<msg timestamp="20250616 20:50:41.955" level="INFO">Sending key i</msg>
-<status status="PASS" starttime="20250616 20:50:41.469" endtime="20250616 20:50:42.103"/>
+<msg timestamp="20250618 14:52:41.562" level="INFO">Sending key(s) ('i',) to xpath=//input[@id="inputBusca"] element.</msg>
+<msg timestamp="20250618 14:52:41.970" level="INFO">Sending key i</msg>
+<status status="PASS" starttime="20250618 14:52:41.558" endtime="20250618 14:52:42.046"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:42.303" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20250616 20:50:42.103" endtime="20250616 20:50:42.303"/>
+<msg timestamp="20250618 14:52:42.246" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20250618 14:52:42.046" endtime="20250618 14:52:42.246"/>
 </kw>
-<status status="PASS" starttime="20250616 20:50:41.469" endtime="20250616 20:50:42.303"/>
+<status status="PASS" starttime="20250618 14:52:41.558" endtime="20250618 14:52:42.246"/>
 </iter>
 <iter>
 <var name="${char}">r</var>
@@ -218,17 +218,17 @@
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <arg>${char}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20250616 20:50:42.306" level="INFO">Sending key(s) ('r',) to xpath=//input[@id="inputBusca"] element.</msg>
-<msg timestamp="20250616 20:50:42.791" level="INFO">Sending key r</msg>
-<status status="PASS" starttime="20250616 20:50:42.303" endtime="20250616 20:50:42.921"/>
+<msg timestamp="20250618 14:52:42.249" level="INFO">Sending key(s) ('r',) to xpath=//input[@id="inputBusca"] element.</msg>
+<msg timestamp="20250618 14:52:42.657" level="INFO">Sending key r</msg>
+<status status="PASS" starttime="20250618 14:52:42.246" endtime="20250618 14:52:42.751"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:43.122" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20250616 20:50:42.921" endtime="20250616 20:50:43.122"/>
+<msg timestamp="20250618 14:52:42.951" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20250618 14:52:42.751" endtime="20250618 14:52:42.951"/>
 </kw>
-<status status="PASS" starttime="20250616 20:50:42.303" endtime="20250616 20:50:43.122"/>
+<status status="PASS" starttime="20250618 14:52:42.246" endtime="20250618 14:52:42.951"/>
 </iter>
 <iter>
 <var name="${char}">a</var>
@@ -236,17 +236,17 @@
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <arg>${char}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20250616 20:50:43.122" level="INFO">Sending key(s) ('a',) to xpath=//input[@id="inputBusca"] element.</msg>
-<msg timestamp="20250616 20:50:43.644" level="INFO">Sending key a</msg>
-<status status="PASS" starttime="20250616 20:50:43.122" endtime="20250616 20:50:43.754"/>
+<msg timestamp="20250618 14:52:42.952" level="INFO">Sending key(s) ('a',) to xpath=//input[@id="inputBusca"] element.</msg>
+<msg timestamp="20250618 14:52:43.363" level="INFO">Sending key a</msg>
+<status status="PASS" starttime="20250618 14:52:42.951" endtime="20250618 14:52:43.467"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:43.955" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20250616 20:50:43.754" endtime="20250616 20:50:43.955"/>
+<msg timestamp="20250618 14:52:43.667" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20250618 14:52:43.467" endtime="20250618 14:52:43.667"/>
 </kw>
-<status status="PASS" starttime="20250616 20:50:43.122" endtime="20250616 20:50:43.955"/>
+<status status="PASS" starttime="20250618 14:52:42.951" endtime="20250618 14:52:43.667"/>
 </iter>
 <iter>
 <var name="${char}">d</var>
@@ -254,17 +254,17 @@
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <arg>${char}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20250616 20:50:43.955" level="INFO">Sending key(s) ('d',) to xpath=//input[@id="inputBusca"] element.</msg>
-<msg timestamp="20250616 20:50:44.448" level="INFO">Sending key d</msg>
-<status status="PASS" starttime="20250616 20:50:43.955" endtime="20250616 20:50:44.551"/>
+<msg timestamp="20250618 14:52:43.668" level="INFO">Sending key(s) ('d',) to xpath=//input[@id="inputBusca"] element.</msg>
+<msg timestamp="20250618 14:52:44.070" level="INFO">Sending key d</msg>
+<status status="PASS" starttime="20250618 14:52:43.667" endtime="20250618 14:52:44.150"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:44.759" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20250616 20:50:44.551" endtime="20250616 20:50:44.759"/>
+<msg timestamp="20250618 14:52:44.350" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20250618 14:52:44.150" endtime="20250618 14:52:44.350"/>
 </kw>
-<status status="PASS" starttime="20250616 20:50:43.955" endtime="20250616 20:50:44.759"/>
+<status status="PASS" starttime="20250618 14:52:43.667" endtime="20250618 14:52:44.350"/>
 </iter>
 <iter>
 <var name="${char}">o</var>
@@ -272,17 +272,17 @@
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <arg>${char}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20250616 20:50:44.761" level="INFO">Sending key(s) ('o',) to xpath=//input[@id="inputBusca"] element.</msg>
-<msg timestamp="20250616 20:50:45.386" level="INFO">Sending key o</msg>
-<status status="PASS" starttime="20250616 20:50:44.759" endtime="20250616 20:50:45.482"/>
+<msg timestamp="20250618 14:52:44.352" level="INFO">Sending key(s) ('o',) to xpath=//input[@id="inputBusca"] element.</msg>
+<msg timestamp="20250618 14:52:44.810" level="INFO">Sending key o</msg>
+<status status="PASS" starttime="20250618 14:52:44.351" endtime="20250618 14:52:44.858"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:45.684" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20250616 20:50:45.482" endtime="20250616 20:50:45.684"/>
+<msg timestamp="20250618 14:52:45.059" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20250618 14:52:44.858" endtime="20250618 14:52:45.059"/>
 </kw>
-<status status="PASS" starttime="20250616 20:50:44.759" endtime="20250616 20:50:45.684"/>
+<status status="PASS" starttime="20250618 14:52:44.350" endtime="20250618 14:52:45.059"/>
 </iter>
 <iter>
 <var name="${char}">r</var>
@@ -290,178 +290,178 @@
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <arg>${char}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20250616 20:50:45.685" level="INFO">Sending key(s) ('r',) to xpath=//input[@id="inputBusca"] element.</msg>
-<msg timestamp="20250616 20:50:46.164" level="INFO">Sending key r</msg>
-<status status="PASS" starttime="20250616 20:50:45.685" endtime="20250616 20:50:46.262"/>
+<msg timestamp="20250618 14:52:45.061" level="INFO">Sending key(s) ('r',) to xpath=//input[@id="inputBusca"] element.</msg>
+<msg timestamp="20250618 14:52:45.543" level="INFO">Sending key r</msg>
+<status status="PASS" starttime="20250618 14:52:45.060" endtime="20250618 14:52:45.623"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:46.464" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20250616 20:50:46.263" endtime="20250616 20:50:46.464"/>
+<msg timestamp="20250618 14:52:45.824" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20250618 14:52:45.623" endtime="20250618 14:52:45.824"/>
 </kw>
-<status status="PASS" starttime="20250616 20:50:45.685" endtime="20250616 20:50:46.464"/>
+<status status="PASS" starttime="20250618 14:52:45.059" endtime="20250618 14:52:45.824"/>
 </iter>
-<status status="PASS" starttime="20250616 20:50:39.464" endtime="20250616 20:50:46.464"/>
+<status status="PASS" starttime="20250618 14:52:39.690" endtime="20250618 14:52:45.824"/>
 </for>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:50:47.466" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20250616 20:50:46.464" endtime="20250616 20:50:47.466"/>
+<msg timestamp="20250618 14:52:46.824" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20250618 14:52:45.824" endtime="20250618 14:52:46.824"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>xpath=//input[@id="inputBusca"]</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20250616 20:50:47.466" level="INFO">Sending key(s) ('ENTER',) to xpath=//input[@id="inputBusca"] element.</msg>
-<msg timestamp="20250616 20:50:47.945" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20250616 20:50:47.945" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20250616 20:50:47.466" endtime="20250616 20:50:54.250"/>
+<msg timestamp="20250618 14:52:46.827" level="INFO">Sending key(s) ('ENTER',) to xpath=//input[@id="inputBusca"] element.</msg>
+<msg timestamp="20250618 14:52:47.214" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20250618 14:52:47.214" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20250618 14:52:46.824" endtime="20250618 14:52:52.745"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:51:04.250" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20250616 20:50:54.250" endtime="20250616 20:51:04.250"/>
+<msg timestamp="20250618 14:53:02.746" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20250618 14:52:52.745" endtime="20250618 14:53:02.746"/>
 </kw>
 <kw name="Take Screenshot" library="Screenshot">
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<msg timestamp="20250616 20:51:04.366" level="INFO" html="true">&lt;a href="screenshot_23.jpg"&gt;&lt;img src="screenshot_23.jpg" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20250616 20:51:04.250" endtime="20250616 20:51:04.366"/>
+<msg timestamp="20250618 14:53:02.914" level="INFO" html="true">&lt;a href="screenshot_26.jpg"&gt;&lt;img src="screenshot_26.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20250618 14:53:02.746" endtime="20250618 14:53:02.914"/>
 </kw>
-<status status="PASS" starttime="20250616 20:50:29.054" endtime="20250616 20:51:04.366"/>
+<status status="PASS" starttime="20250618 14:52:29.272" endtime="20250618 14:53:02.915"/>
 </kw>
 <kw name="Então adiciono o produto com sucesso" library="carrinho_keywords">
 <kw name="Log To Console" library="BuiltIn">
 <arg>Selecionando o aspirador de pó</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20250616 20:51:04.366" endtime="20250616 20:51:04.366"/>
+<status status="PASS" starttime="20250618 14:53:02.916" endtime="20250618 14:53:02.916"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>xpath=//*[@id="listing"]/div[3]/div/div/div[2]/div/main/div[1]/article/div[2]</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20250616 20:51:04.366" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="listing"]/div[3]/div/div/div[2]/div/main/div[1]/article/div[2]'.</msg>
-<status status="PASS" starttime="20250616 20:51:04.366" endtime="20250616 20:51:04.760"/>
+<msg timestamp="20250618 14:53:02.918" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="listing"]/div[3]/div/div/div[2]/div/main/div[1]/article/div[2]'.</msg>
+<status status="PASS" starttime="20250618 14:53:02.917" endtime="20250618 14:53:03.250"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:51:09.760" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250616 20:51:04.760" endtime="20250616 20:51:09.760"/>
+<msg timestamp="20250618 14:53:08.251" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250618 14:53:03.250" endtime="20250618 14:53:08.251"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="listing"]/div[3]/div/div/div[2]/div/main/div[1]/article/div[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20250616 20:51:09.761" level="INFO">Clicking element 'xpath=//*[@id="listing"]/div[3]/div/div/div[2]/div/main/div[1]/article/div[2]'.</msg>
-<status status="PASS" starttime="20250616 20:51:09.760" endtime="20250616 20:51:10.023"/>
+<msg timestamp="20250618 14:53:08.252" level="INFO">Clicking element 'xpath=//*[@id="listing"]/div[3]/div/div/div[2]/div/main/div[1]/article/div[2]'.</msg>
+<status status="PASS" starttime="20250618 14:53:08.251" endtime="20250618 14:53:08.489"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:51:15.031" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250616 20:51:10.023" endtime="20250616 20:51:15.031"/>
+<msg timestamp="20250618 14:53:13.490" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250618 14:53:08.489" endtime="20250618 14:53:13.490"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Garantia Estendida Original Ampliada</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20250616 20:51:15.093" level="INFO">Current page contains text 'Garantia Estendida Original Ampliada'.</msg>
-<status status="PASS" starttime="20250616 20:51:15.031" endtime="20250616 20:51:15.093"/>
+<msg timestamp="20250618 14:53:13.535" level="INFO">Current page contains text 'Garantia Estendida Original Ampliada'.</msg>
+<status status="PASS" starttime="20250618 14:53:13.490" endtime="20250618 14:53:13.535"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:51:20.095" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250616 20:51:15.093" endtime="20250616 20:51:20.095"/>
+<msg timestamp="20250618 14:53:18.537" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250618 14:53:13.536" endtime="20250618 14:53:18.537"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>Removendo a garantia e serviços extendidos do produto</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20250616 20:51:20.095" endtime="20250616 20:51:20.095"/>
+<status status="PASS" starttime="20250618 14:53:18.537" endtime="20250618 14:53:18.538"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="main-content"]/div[1]/div/div[2]/section/section/button[2]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20250616 20:51:20.095" level="INFO">Clicking button '//*[@id="main-content"]/div[1]/div/div[2]/section/section/button[2]'.</msg>
-<status status="PASS" starttime="20250616 20:51:20.095" endtime="20250616 20:51:25.739"/>
+<msg timestamp="20250618 14:53:18.538" level="INFO">Clicking button '//*[@id="main-content"]/div[1]/div/div[2]/section/section/button[2]'.</msg>
+<status status="PASS" starttime="20250618 14:53:18.538" endtime="20250618 14:53:21.566"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:51:30.740" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250616 20:51:25.739" endtime="20250616 20:51:30.740"/>
+<msg timestamp="20250618 14:53:26.566" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250618 14:53:21.566" endtime="20250618 14:53:26.566"/>
 </kw>
 <kw name="Take Screenshot" library="Screenshot">
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<msg timestamp="20250616 20:51:30.780" level="INFO" html="true">&lt;a href="screenshot_24.jpg"&gt;&lt;img src="screenshot_24.jpg" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20250616 20:51:30.740" endtime="20250616 20:51:30.780"/>
+<msg timestamp="20250618 14:53:26.659" level="INFO" html="true">&lt;a href="screenshot_27.jpg"&gt;&lt;img src="screenshot_27.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20250618 14:53:26.567" endtime="20250618 14:53:26.659"/>
 </kw>
-<status status="PASS" starttime="20250616 20:51:04.366" endtime="20250616 20:51:30.780"/>
+<status status="PASS" starttime="20250618 14:53:02.915" endtime="20250618 14:53:26.659"/>
 </kw>
 <kw name="Então dessisto da compra e excluo o produto do carrinho" library="carrinho_keywords">
 <kw name="Log To Console" library="BuiltIn">
 <arg>Removendo o produto do carrinho</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20250616 20:51:30.780" endtime="20250616 20:51:30.780"/>
+<status status="PASS" starttime="20250618 14:53:26.660" endtime="20250618 14:53:26.660"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Resumo</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20250616 20:51:30.825" level="INFO">Current page contains text 'Resumo'.</msg>
-<status status="PASS" starttime="20250616 20:51:30.780" endtime="20250616 20:51:30.825"/>
+<msg timestamp="20250618 14:53:26.683" level="INFO">Current page contains text 'Resumo'.</msg>
+<status status="PASS" starttime="20250618 14:53:26.660" endtime="20250618 14:53:26.683"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="removerTodosProdutos"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20250616 20:51:30.828" level="INFO">Clicking button '//*[@id="removerTodosProdutos"]'.</msg>
-<status status="PASS" starttime="20250616 20:51:30.825" endtime="20250616 20:51:31.060"/>
+<msg timestamp="20250618 14:53:26.684" level="INFO">Clicking button '//*[@id="removerTodosProdutos"]'.</msg>
+<status status="PASS" starttime="20250618 14:53:26.683" endtime="20250618 14:53:26.878"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Você tem certeza que deseja remover todos os produtos do carrinho?</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20250616 20:51:31.150" level="INFO">Current page contains text 'Você tem certeza que deseja remover todos os produtos do carrinho?'.</msg>
-<status status="PASS" starttime="20250616 20:51:31.060" endtime="20250616 20:51:31.150"/>
+<msg timestamp="20250618 14:53:26.959" level="INFO">Current page contains text 'Você tem certeza que deseja remover todos os produtos do carrinho?'.</msg>
+<status status="PASS" starttime="20250618 14:53:26.878" endtime="20250618 14:53:26.959"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="radix-:r0:"]/div/button[2]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20250616 20:51:31.150" level="INFO">Clicking button '//*[@id="radix-:r0:"]/div/button[2]'.</msg>
-<status status="PASS" starttime="20250616 20:51:31.150" endtime="20250616 20:51:31.424"/>
+<msg timestamp="20250618 14:53:26.961" level="INFO">Clicking button '//*[@id="radix-:r0:"]/div/button[2]'.</msg>
+<status status="PASS" starttime="20250618 14:53:26.959" endtime="20250618 14:53:27.203"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20250616 20:51:36.424" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20250616 20:51:31.424" endtime="20250616 20:51:36.424"/>
+<msg timestamp="20250618 14:53:32.205" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20250618 14:53:27.204" endtime="20250618 14:53:32.205"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>O seu carrinho está vazio.</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20250616 20:51:36.441" level="INFO">Current page contains text 'O seu carrinho está vazio.'.</msg>
-<status status="PASS" starttime="20250616 20:51:36.424" endtime="20250616 20:51:36.441"/>
+<msg timestamp="20250618 14:53:32.222" level="INFO">Current page contains text 'O seu carrinho está vazio.'.</msg>
+<status status="PASS" starttime="20250618 14:53:32.205" endtime="20250618 14:53:32.222"/>
 </kw>
 <kw name="Take Screenshot" library="Screenshot">
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<msg timestamp="20250616 20:51:36.497" level="INFO" html="true">&lt;a href="screenshot_25.jpg"&gt;&lt;img src="screenshot_25.jpg" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20250616 20:51:36.441" endtime="20250616 20:51:36.497"/>
+<msg timestamp="20250618 14:53:32.289" level="INFO" html="true">&lt;a href="screenshot_28.jpg"&gt;&lt;img src="screenshot_28.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20250618 14:53:32.222" endtime="20250618 14:53:32.289"/>
 </kw>
-<status status="PASS" starttime="20250616 20:51:30.780" endtime="20250616 20:51:36.497"/>
+<status status="PASS" starttime="20250618 14:53:26.659" endtime="20250618 14:53:32.289"/>
 </kw>
-<tag>excluir_compra</tag>
-<status status="PASS" starttime="20250616 20:49:57.767" endtime="20250616 20:51:36.497"/>
+<tag>geral</tag>
+<status status="PASS" starttime="20250618 14:52:05.615" endtime="20250618 14:53:32.290"/>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20250616 20:51:36.497" endtime="20250616 20:51:38.816"/>
+<status status="PASS" starttime="20250618 14:53:32.294" endtime="20250618 14:53:34.817"/>
 </kw>
-<status status="PASS" starttime="20250616 20:49:49.214" endtime="20250616 20:51:38.816"/>
+<status status="PASS" starttime="20250618 14:51:51.959" endtime="20250618 14:53:34.817"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">excluir_compra</stat>
+<stat pass="1" fail="0" skip="0">geral</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Carrinho Compras">Carrinho Compras</stat>

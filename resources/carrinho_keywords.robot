@@ -15,12 +15,11 @@ Abrir o navegador e acessar o site
 Dado que realizo o login com sucesso
     # Click Element    xpath=//a[contains(@href, "/login")]
     Log To Console    Digitando o e-mail
-    Input Text       //*[@id="main-content"]/div[2]/div/section/div/form/div[1]/input     samuelbrandao.oliveira@gmail.com
-    Sleep    5
+    Input Text       //*[@id="main-content"]/div[2]/div/section/div/form/div[1]/input     ${email}
 
     
     Log To Console    Digitando o e-mail
-    Input Text      //*[@id="main-content"]/div[2]/div/section/div/form/div[2]/input      G@fisa2030
+    Input Text      //*[@id="main-content"]/div[2]/div/section/div/form/div[2]/input      ${senha}
     Sleep    5
 
     Log To Console    Clicando na mensagem de Cookies
